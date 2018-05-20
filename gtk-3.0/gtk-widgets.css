@@ -23,11 +23,11 @@
     color: @theme_fg_color;
 }
 
-* {
-    /* inherit colors from parent */
+/* inherit colors from parent */
+/* * {
     color: inherit;
     background-color: inherit;
-}
+}*/
 
 *:selected,
 *:selected:focus {
@@ -369,14 +369,6 @@ drawingarea {
 
 drawingarea:disabled {
     background-color: shade(@theme_base_color, 0.9);
-}
-
-/***********
- * gtkhtml *
- ***********/
-GtkHTML {
-    background-color: @theme_base_color;
-    color: @theme_text_color;
 }
 
 /***********
@@ -1336,17 +1328,17 @@ notebook tab button {
 }
 
 notebook GtkDrawingArea {
-        background-color: @theme_base_color;
+    background-color: @theme_base_color;
 }
 
-notebookframe {
+notebook frame {
     border-width: 1px;
 }
 
 /* close button styling */
 notebook tab button,
-notebook tab button:active,
-notebook tab button:hover {
+notebook tab button:hover,
+notebook tab button:active {
     padding: 1px;
     border-width: 0px;
     border-radius: 2px;
