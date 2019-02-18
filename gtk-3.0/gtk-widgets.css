@@ -1896,9 +1896,6 @@ toolbar {
   min-height: 20px;
   min-width: 80px; }
 
-stackswitcher button.text-button {
-  min-width: 80px; }
-
 tooltip {
   border-radius: 2px;
   box-shadow: none; }
