@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=BeOS R5
+Comment=GTK theme based on BeOS R5
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=BeOS R5
+MetacityTheme=BeOS R5
+IconTheme=BeOS
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close
