@@ -1482,57 +1482,29 @@ scale {
       margin-right: -12px; }
 
 progressbar {
-  padding: 0;
-  border: none;
-  color: gray;
-  background-color: transparent; }
-  progressbar progress {
-    border: 1px solid #255584;
-    background-color: #3196ff;
-    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-    border-radius: 0px; }
-  progressbar trough {
+  font-size: smaller;
+  color: gray; }
+  progressbar > trough {
     border-radius: 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #adadad;
+    border: 1px solid #adadad;
     border-bottom-color: #e6e6e6;
     border-right-color: #e6e6e6;
     background-color: #FFFFFF;
     color: #000000;
     box-shadow: inset 1px 1px #8c8c8c, inset -1px -1px gainsboro; }
-  progressbar.horizontal trough, progressbar.horizontal progress {
-    min-height: 18px; }
-  progressbar.horizontal trough {
-    padding: 2px 0; }
-  progressbar.vertical trough, progressbar.vertical progress {
-    min-width: 18px; }
-  progressbar.vertical trough {
-    padding: 0 2px; }
-
-treeview.view.progressbar, treeview.view.progressbar:disabled {
-  color: #FFFFFF;
-  border-radius: 0;
-  background-color: #989898; }
-
-treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus, treeview.view.progressbar:disabled:selected {
-  border-radius: 0;
-  color: #989898;
-  background-color: #FFFFFF; }
-
-treeview.view.trough {
-  color: #000000;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 0;
-  border: none; }
-  treeview.view.trough:selected, treeview.view.trough:selected:focus {
-    color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
-    border: none; }
-
-infobar treeview.view trough, row:selected treeview.view trough {
-  background-color: rgba(0, 0, 0, 0.1); }
+  progressbar > trough > progress {
+    border: 1px solid #255584;
+    background-color: #3196ff;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+    border-radius: 0px; }
+  progressbar.horizontal > trough {
+    min-width: 150px; }
+  progressbar.vertical > trough {
+    min-height: 80px; }
+  progressbar.horizontal > trough, progressbar.horizontal > trough > progress {
+    min-height: 7px; }
+  progressbar.vertical > trough, progressbar.vertical > trough > progress {
+    min-width: 7px; }
 
 levelbar trough {
   padding: 1px;
