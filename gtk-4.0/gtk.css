@@ -1272,16 +1272,18 @@ treeview ~ scrollbar.vertical {
   margin-top: -1px; }
 
 switch {
-  font-size: 0;
-  color: transparent;
-  outline-offset: -4px;
   margin: 4px;
-  border: 1px solid #c2c2c2;
+  font-size: 0;
   border-radius: 2px;
+  border: 1px solid #c2c2c2;
+  color: transparent;
   background-color: #c2c2c2; }
   switch:checked {
     border-color: #989898;
     background-color: #989898; }
+    switch:checked:backdrop {
+      border-color: #989898;
+      background-color: #989898; }
   switch:disabled {
     border-color: #cdcdcd;
     background-color: #cdcdcd; }
@@ -1291,16 +1293,18 @@ switch {
   switch:backdrop {
     border-color: #c2c2c2;
     background-color: #c2c2c2; }
-  switch slider {
-    min-width: 20px;
-    min-height: 20px;
-    margin: 0;
-    border: none;
+  switch > slider {
+    margin: 0px;
+    min-width: 26px;
+    min-height: 22px;
     border-radius: 2px;
+    border: 1px solid #6b6b6b;
     color: #000000;
-    border-color: #6b6b6b;
     background-color: #e9e9e9;
     box-shadow: inset 3px 3px white, inset 1px 1px #D8D8D8, inset -2px -2px #b8b8b8, inset -1px -1px #8c8c8c; }
+  switch:disabled > slider {
+    border-color: #aeaeae;
+    box-shadow: inset 3px 3px white, inset 1px 1px #D8D8D8, inset -2px -2px #D8D8D8, inset -1px -1px #adadad; }
 
 checkbutton.text-button, radiobutton.text-button {
   padding: 4px;
