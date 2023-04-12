@@ -1494,18 +1494,18 @@ progressbar {
     color: #000000;
     box-shadow: inset 1px 1px #8c8c8c, inset -1px -1px gainsboro; }
   progressbar > trough > progress {
+    border-radius: 0px;
     border: 1px solid #255584;
     background-color: #3196ff;
-    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
-    border-radius: 0px; }
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5); }
   progressbar.horizontal > trough {
     min-width: 150px; }
   progressbar.vertical > trough {
     min-height: 80px; }
   progressbar.horizontal > trough, progressbar.horizontal > trough > progress {
-    min-height: 7px; }
+    min-height: 16px; }
   progressbar.vertical > trough, progressbar.vertical > trough > progress {
-    min-width: 7px; }
+    min-width: 16px; }
 
 levelbar trough {
   padding: 1px;
